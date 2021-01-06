@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+
 
 const Crown = (props) =>{
 
@@ -8,6 +10,10 @@ const Crown = (props) =>{
             <rect width="30.4986" height="3.07759" transform="translate(6.56987 31.5603)"/>
             </svg>
         )
+    }
+
+    Crown.propTypes = {
+        isHighScore: PropTypes.bool
     }
 
 export default Crown;
