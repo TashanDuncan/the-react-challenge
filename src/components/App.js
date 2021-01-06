@@ -7,25 +7,25 @@ class App extends Component {
   state = {
     players: [
       {
-        name: 'Guil',
+        name: 'Tashan',
         score: 0,
         id: 1,
         isHighScore: false,
       },
       {
-        name: 'Treasure',
+        name: 'Liam',
         score: 0,
         id: 2,
         isHighScore: false,
       },
       {
-        name: 'Ashley',
+        name: 'Will',
         score: 0,
         id: 3,
         isHighScore: false,
       },
       {
-        name: 'James',
+        name: 'Kamal',
         score: 0,
         id: 4,
         isHighScore: false,
@@ -82,8 +82,8 @@ class App extends Component {
       const updated = [...prevState.players];
       const highScore = Math.max.apply(
         Math,
-        updated.map(function (o) {
-          return o.score;
+        updated.map(function (player) {
+          return player.score;
         })
       );
       console.log(highScore);
